@@ -56,8 +56,8 @@ def valid_phone_number?(phone)
     i.match(/\b[0-9]{10}\b/) # && i.match(/\D/)
   else
     return false
-
     }
+
   true
   end
 
