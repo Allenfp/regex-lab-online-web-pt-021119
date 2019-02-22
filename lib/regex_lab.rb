@@ -29,7 +29,7 @@ def words_five_letters_long(text)
   return_array = []
 
   text.split(' ').each do |i|
-    if i.match(/\b\w{5,5}\b/)
+    if i.match(/\b[a-z]{5,5}\b/)
       return_array.push(i)
     end
   end
