@@ -15,12 +15,12 @@ def words_starting_with_un_and_ending_with_ing(text)
   return_array = []
 
   text.split(' ').each_char do |i|
-      if i.match(/^(un)$(ing)/)
-        i.push(return_array)
-      end
+    if i.match(/^(un)$(ing)/)
+      i.push(return_array)
     end
+  end
 
-    return_array
+  return_array
 
 end
 
