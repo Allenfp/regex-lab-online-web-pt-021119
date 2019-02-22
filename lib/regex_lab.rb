@@ -26,6 +26,16 @@ end
 
 def words_five_letters_long(text)
 
+  return_array = []
+
+  text.split(' ').each do |i|
+    if i.match(/{5}/)
+      return_array.push(i)
+    end
+  end
+
+  return_array
+
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
