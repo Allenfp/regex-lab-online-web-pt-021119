@@ -55,10 +55,9 @@ def valid_phone_number?(phone)
   is_true = false
 
   if phone.each_char { |i|
-
+    i.match(/[0-9]{10,10}/) # && text.match(/[[:punct:]]$/)
+      is_true = true
     }
-    .match(/[0-9]{10,10}/) # && text.match(/[[:punct:]]$/)
-    is_true = true
   end
 
   is_true
