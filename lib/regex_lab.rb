@@ -11,7 +11,16 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  /^(un)$(ing)/
+
+  return_array = []
+
+  text.split(' ').each_char do |i|
+      if i.match(/^(un)$(ing)/)
+        i.push(return_array)
+    end
+
+    return_array
+    
 end
 
 def words_five_letters_long(text)
