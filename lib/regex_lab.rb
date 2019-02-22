@@ -54,7 +54,7 @@ def valid_phone_number?(phone)
 
   is_true = false
 
-  if text.match(/\b[0-9]{10,10}\b/) # && text.match(/[[:punct:]]$/)
+  if phone.match(/\b[0-9]{10,10}\b/) # && text.match(/[[:punct:]]$/)
     is_true = true
   end
 
