@@ -52,15 +52,15 @@ end
 
 def valid_phone_number?(phone)
 
-  phone.each { |i|
+  phone.each do |i|
     if
       i.match(/\b[0-9]{10,10}\b/) # && i.match(/\D/)
     else
       return false
-    }
-
-  true
+    end
   end
+ true  
+end
 
 
 end
