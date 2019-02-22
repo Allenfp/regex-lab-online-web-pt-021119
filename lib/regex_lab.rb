@@ -52,7 +52,7 @@ end
 
 def valid_phone_number?(phone)
 
-  phone_stripped = phone.gsub(/\D/)
+  phone_stripped = phone.gsub(/\D/,"")
   puts phone_stripped
 
     if phone.match(/[[0-9]]{10,10}/)
